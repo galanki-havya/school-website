@@ -55,7 +55,7 @@ const Contact = () => {
           </h2>
           <div style={styles.underline}></div>
           <p style={styles.subtext}>
-            Mudivedu • Chittoor District • Andhra Pradesh - 517350
+            Mudivedu Cross • Kurabalakota Mandal • Annamayya District • Andhra Pradesh - 517350
           </p>
         </div>
 
@@ -67,12 +67,12 @@ const Contact = () => {
             <InfoCard
               icon="📍"
               title="Campus Address"
-              lines={["Mudivedu, Chittoor District, Andhra Pradesh - 517350"]}
+              lines={["Mudivedu Cross, Kurabalakota Mandal, Annamayya District, Andhra Pradesh - 517350"]}
             />
             <InfoCard
               icon="📞"
               title="Phone Support"
-              lines={["+91 94418 03588"]}
+              lines={["+91 94409 14949"]}
             />
             <InfoCard
               icon="✉️"
@@ -118,7 +118,7 @@ const Contact = () => {
         }}>
           <iframe
             title="School Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3878.891157640428!2d78.47353977508688!3d13.54228968682859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb95dc5c5331465%3A0x5b653ecd5d873812!2sSri%20Swami%20Vivekananda%20High%20School!5e0!3m2!1sen!2sin!4v1705000000000!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3876.4839603685923!2d78.50550807508915!3d13.689112986696207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDQxJzIwLjgiTiA3OMKwMzAnMjkuMSJF!5e0!3m2!1sen!2sin!4v1774336269261!5m2!1sen!2sin"
             height="100%"
             width="100%"
             style={{ border: 0 }}

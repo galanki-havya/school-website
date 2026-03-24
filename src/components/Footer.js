@@ -9,7 +9,7 @@ function Footer() {
       <div style={styles.contentGrid}>
         
         <div style={styles.column}>
-          <h3 style={styles.columnTitle}>Sri Swamy Vivekanandha</h3>
+          <h3 style={styles.columnTitle}>Sri Swamy Vivekanandha E.M High School</h3>
           <p style={styles.schoolDescription}>
             Nurturing young minds with a blend of modern education and 
             timeless values since 1998.
@@ -33,17 +33,22 @@ function Footer() {
 
         <div style={styles.column}>
           <h3 style={styles.columnTitle}>Get In Touch</h3>
-          <p style={styles.contactItem}>📍 Mudivedu, Chittoor Dist, Andhra Pradesh</p>
-          <p style={styles.contactItem}>📞 +91 94418 03588</p>
-          <p style={styles.contactItem}>✉️ sriswamivivekanandaemhighschool@gmail.com</p>
-
+          <p style={styles.contactItem}>
+            📍 Mudivedu Cross, Kurabalakota Mandal, Annamayya District, Andhra Pradesh - 517350
+          </p>
+          <p style={styles.contactItem}>
+            📞 +91 9440914949
+          </p>
+          <p style={styles.contactItem}>
+            ✉️ sriswamivivekanandaemhighschool@gmail.com
+          </p>
         </div>
 
       </div>
 
       <div style={styles.bottomBar}>
         <p style={styles.copyright}>
-          © {currentYear} Sri Swamy Vivekanandha School.
+          © {currentYear} Sri Swamy Vivekanandha E.M High School. All rights reserved.
         </p>
       </div>
     </footer>
@@ -106,15 +111,6 @@ const styles = {
     display: "flex",
     alignItems: "center",
     gap: "8px",
-  },
-  affiliationBadge: {
-    marginTop: "8px",
-    padding: "4px 10px",
-    border: "1px solid #F4B41A",
-    borderRadius: "4px",
-    fontSize: "0.75rem",
-    color: "#F4B41A",
-    width: "fit-content",
   },
   socialIcons: {
     display: "flex",
