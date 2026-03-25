@@ -16,10 +16,22 @@ import Sports4 from "../assets/sports-4.png";
 import ScienceFair1 from "../assets/science-fair-1.png";
 import ScienceFair2 from "../assets/science-fair-2.png";
 import ScienceFair3 from "../assets/science-fair-3.png";
+import ScienceFair4 from "../assets/Science-fair-4.png";
+import ScienceFair5 from "../assets/science-fair-5.png";
+import ScienceFair6 from "../assets/science-fair-6.png";
 import Excursion1 from "../assets/excursion-1.png";
 import Excursion2 from "../assets/excursion-2.png";
 import Excursion3 from "../assets/excursion-3.png";
 import Excursion4 from "../assets/excursion-4.png";
+import Excursion5 from "../assets/excursion-5.png";
+import Excursion6 from "../assets/excursion-6.png";
+import Farewell from "../assets/Farewell.png";
+import Farewell1 from "../assets/Farewell-1.png";
+import Farewell2 from "../assets/Farewell-2.png";
+import Farewell4 from "../assets/Farewell-4.png";
+import Farewell5 from "../assets/Farewell-5.png";
+import Farewell6 from "../assets/Farewell-6.png";
+
 
 function Gallery() {
   const [filter, setFilter] = useState("All");
@@ -69,8 +81,11 @@ function Gallery() {
         title: "Science Fair",
         album: [
           {url: ScienceFair1, title: "Science Fair-1"},
-          {url: ScienceFair2, title: "Science Fair-2"},
-          {url: ScienceFair3, title: "Science Fair-3"}
+          {url: ScienceFair3, title: "Science Fair-2"},
+          {url: ScienceFair2, title: "Science Fair-3"},
+          {url: ScienceFair4, title: "Science Fair-4"},
+          {url: ScienceFair6, title: "Science Fair-5"},
+          {url: ScienceFair5, title: "Science Fair-6"}
         ]          
       },
       {
@@ -81,8 +96,24 @@ function Gallery() {
         album: [
           {url: Excursion1, title: "Excursion-1"},
           {url: Excursion2, title: "Excursion-2"},
-          {url: Excursion3, title: "Excursion-3"},
-          {url: Excursion4, title: "Excursion-4"}
+          {url: Excursion5, title: "Excursion-3"},
+          {url: Excursion4, title: "Excursion-4"},
+          {url: Excursion3, title: "Excursion-5"},
+          {url: Excursion6, title: "Excursion-6"}
+        ]
+      },
+      {
+        id: 5,
+        category: "Events", 
+        url: Farewell, 
+        title: " Farewell Party",
+        album: [
+          {url: Farewell, title: "Farewell"},
+          {url: Farewell2, title: "Farewell-1"},
+          {url: Farewell1, title: "Farewell-2"},
+          {url: Farewell4, title: "Farewell-3"},
+          {url: Farewell6, title: "Farewell-4"},
+          {url: Farewell5, title: "Farewell-5"}
         ]
       }
   ];
