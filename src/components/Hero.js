@@ -59,7 +59,7 @@ function Hero() {
 
 const styles = {
   hero: {
-    height: "85vh",
+    height: "90vh",
     backgroundImage: `url(${schoolBuildingImage})`,
     backgroundSize: "cover",
     backgroundPosition: "center", 

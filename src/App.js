@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import Academics from "./pages/Academics";
 import Admissions from "./pages/Admissions";
 import Facilities from "./pages/Facilities";
+import WhatsAppWidget from "./pages/WhatsAppWidget";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -40,7 +41,7 @@ function App() {
           
         </Routes>
       </main>
-
+      <WhatsAppWidget />
       <Footer />
     </Router>
   );

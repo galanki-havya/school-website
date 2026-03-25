@@ -4,6 +4,10 @@ import Testimonials from "../components/Testimonials";
 import Hero from "../components/Hero"; 
 import campusImage from "../assets/school-campus.png";
 
+// Import your leader images here
+import correspondentImg from "../assets/Chairman.png";
+import principalImg from "../assets/principal.png";
+
 const ThickDivider = ({ color = "#F4B41A" }) => (
   <div style={{
     height: '6px', 
@@ -61,19 +65,62 @@ function Home() {
 
       <ThickDivider color="#0B3C5D" />
 
-      {/* 3. PRINCIPAL'S MESSAGE */}
+      {/* 3. LEADERSHIP MESSAGES (Correspondent & Principal) */}
       <section style={styles.sectionCream}>
         <div style={styles.container}>
+          <div style={{textAlign: 'center', marginBottom: '40px'}}>
+            <span style={styles.accentText}>Our Leadership</span>
+            <h2 style={styles.sectionTitle}>Guidance from our Mentors</h2>
+            <div style={{...styles.goldLine, margin: '10px auto 0'}}></div>
+          </div>
+
           <div style={{
-            ...styles.principalBox,
-            ...(isMobile ? { textAlign: 'center', flexDirection: 'column' } : {})
+            ...styles.leadershipGrid,
+            ...(isMobile ? styles.flexColumn : {})
           }}>
-            <div style={styles.principalContent}>
-              <h3 style={styles.subHeading}>Principal's Message</h3>
-              <p style={styles.italicText}>"Education is character building and life-making assimilation of ideas."</p>
-              <h4 style={styles.authorName}>—P. Malleswari</h4>
-              <span style={styles.authorTitle}>Principal, SSV School</span>
+            
+            {/* Correspondent / Chairman */}
+            <div style={styles.leaderCard}>
+              <div style={styles.leaderImageContainer}>
+                {/* Replace src with your correspondentImg variable */}
+                <img 
+                  src= {correspondentImg}
+                  alt="Dr. P. Surendra Yadav" 
+                  style={styles.leaderImg} 
+                />
+              </div>
+              <div style={styles.leaderContent}>
+                <h3 style={styles.subHeading}>Chairman's Message</h3>
+                <p style={styles.italicText}>
+                  "Our mission is to provide quality education that empowers students 
+                  to become global citizens while staying rooted in our culture."
+                </p>
+                <h4 style={styles.authorName}>Dr. P. Surendra Yadav</h4>
+                <span style={styles.authorTitle}>M.A., Ph.D. • Chairman</span>
+              </div>
             </div>
+
+            {/* Principal */}
+            <div style={styles.leaderCard}>
+              <div style={styles.leaderImageContainer}>
+                {/* Replace src with your principalImg variable */}
+                <img 
+                  src= {principalImg}
+                  alt="P. Malleswari" 
+                  style={styles.leaderImg} 
+                />
+              </div>
+              <div style={styles.leaderContent}>
+                <h3 style={styles.subHeading}>Principal's Message</h3>
+                <p style={styles.italicText}>
+                  "Education is character building and life-making assimilation of ideas. 
+                  We strive for the holistic development of every child."
+                </p>
+                <h4 style={styles.authorName}>P. Malleswari</h4>
+                <span style={styles.authorTitle}>B.A., B.Ed. • Principal</span>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -143,8 +190,8 @@ const styles = {
   container: { maxWidth: "1100px", margin: "0 auto", padding: "0 20px" },
   heroStickyWrapper: { position: "relative", zIndex: 1 },
   sectionWhite: { padding: "60px 0", backgroundColor: "#fff", position: "relative", zIndex: 2 },
-  sectionCream: { padding: "60px 0", backgroundColor: "#fffdf5", position: "relative", zIndex: 2 },
-  flexColumn: { flexDirection: "column", textAlign: "center" },
+  sectionCream: { padding: "80px 0", backgroundColor: "#fffdf5", position: "relative", zIndex: 2 },
+  flexColumn: { flexDirection: "column", textAlign: "center", gap: "30px" },
   aboutGrid: { display: "flex", gap: "40px", alignItems: "center" },
   aboutText: { flex: "1.2" },
   aboutImageCard: { flex: "1", width: "100%" },
@@ -154,12 +201,25 @@ const styles = {
   bodyText: { fontSize: "0.95rem", lineHeight: "1.7", color: "#555", margin: "20px 0" },
   textBtn: { background: "none", border: "none", color: "#0B3C5D", fontWeight: "800", cursor: "pointer", fontSize: "0.95rem", padding: 0 },
   accentText: { color: "#F4B41A", fontWeight: "700", textTransform: "uppercase", fontSize: "0.75rem", letterSpacing: "1.5px" },
-  principalBox: { display: "flex", gap: "30px", alignItems: "center", justifyContent: "center" },
-  principalContent: { flex: 1 },
-  subHeading: { fontSize: "1.6rem", color: "#0B3C5D", margin: "0 0 8px", fontWeight: "700" },
-  italicText: { fontStyle: "italic", fontSize: "1.1rem", marginBottom: "12px", color: "#444", lineHeight: 1.5 },
-  authorName: { color: "#0B3C5D", fontWeight: "800", margin: 0, fontSize: "1rem" },
-  authorTitle: { color: "#777", fontSize: "0.85rem" },
+  
+  // Leadership Specific Styles
+  leadershipGrid: { display: "flex", gap: "30px", justifyContent: "center", alignItems: "stretch" },
+  leaderCard: { 
+    flex: 1, display: "flex", flexDirection: "column", alignItems: "center", 
+    backgroundColor: "#fff", padding: "40px 30px", borderRadius: "15px", 
+    boxShadow: "0 5px 25px rgba(0,0,0,0.05)", border: "1px solid #f1f5f9" 
+  },
+  leaderImageContainer: { 
+    width: "140px", height: "140px", borderRadius: "50%", overflow: "hidden", 
+    marginBottom: "20px", border: "4px solid #F4B41A", boxShadow: "0 4px 10px rgba(0,0,0,0.1)" 
+  },
+  leaderImg: { width: "100%", height: "100%", objectFit: "cover" },
+  leaderContent: { display: "flex", flexDirection: "column", flex: 1 },
+  subHeading: { fontSize: "1.4rem", color: "#0B3C5D", margin: "0 0 12px", fontWeight: "700" },
+  italicText: { fontStyle: "italic", fontSize: "1rem", marginBottom: "15px", color: "#444", lineHeight: 1.6, flex: 1 },
+  authorName: { color: "#0B3C5D", fontWeight: "800", margin: "10px 0 2px", fontSize: "1.1rem" },
+  authorTitle: { color: "#F4B41A", fontSize: "0.85rem", fontWeight: "600", letterSpacing: "0.5px" },
+  
   featureGrid: { display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "25px" },
   featureCard: { padding: "30px 20px", backgroundColor: "#fff", borderBottom: "5px solid #F4B41A", boxShadow: "0 8px 25px rgba(0,0,0,0.05)", textAlign: "center", borderRadius: "10px" },
   iconContainer: { fontSize: "2.5rem", marginBottom: "15px" },

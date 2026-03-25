@@ -15,9 +15,17 @@ function Footer() {
             timeless values since 1998.
           </p>
           <div style={styles.socialIcons}>
-            <span style={styles.iconCircle}>f</span>
-            <span style={styles.iconCircle}>in</span>
-            <span style={styles.iconCircle}>yt</span>
+            {/* Functional Facebook Link */}
+            <a 
+              href="https://www.facebook.com/surendra.yadav.514223/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              style={styles.iconLink}
+            >
+              <div style={styles.iconCircle}>f</div>
+            </a>
+            <div style={styles.iconCircle}>yt</div>
+            <div style={styles.iconCircle}>in</div>
           </div>
         </div>
 
@@ -34,13 +42,25 @@ function Footer() {
         <div style={styles.column}>
           <h3 style={styles.columnTitle}>Get In Touch</h3>
           <p style={styles.contactItem}>
-            📍 Mudivedu Cross, Kurabalakota Mandal, Annamayya District, Andhra Pradesh - 517350
+            📍 Mudivedu Cross, Kurabalakota Mandal, Annamayya District, AP - 517350
           </p>
+          
+          <div style={styles.contactGroup}>
+            <p style={styles.contactItem}>
+              📞 <a href="tel:+919440914949" style={styles.link}>+91 94409 14949</a> (Correspondent)
+            </p>
+            <p style={styles.contactItem}>
+              📞 <a href="tel:+919885692469" style={styles.link}>+91 98856 92469</a> (H.M.)
+            </p>
+            <p style={styles.contactItem}>
+              📞 <a href="tel:+918985904949" style={styles.link}>+91 89859 04949</a> (Office)
+            </p>
+          </div>
+
           <p style={styles.contactItem}>
-            📞 +91 9440914949
-          </p>
-          <p style={styles.contactItem}>
-            ✉️ sriswamivivekanandaemhighschool@gmail.com
+            ✉️ <a href="mailto:sriswamivivekanandaemhighschool@gmail.com" style={styles.link}>
+              sriswamivivekanandaemhighschool@gmail.com
+            </a>
           </p>
         </div>
 
@@ -66,7 +86,7 @@ const styles = {
     maxWidth: "1100px",
     margin: "0 auto",
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", 
+    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", 
     gap: "30px", 
     paddingBottom: "30px",
   },
@@ -104,6 +124,11 @@ const styles = {
     fontSize: "0.85rem",
     transition: "all 0.3s ease",
   },
+  contactGroup: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "4px",
+  },
   contactItem: {
     fontSize: "0.85rem",
     color: "rgba(255, 255, 255, 0.7)",
@@ -117,6 +142,9 @@ const styles = {
     gap: "10px",
     marginTop: "5px",
   },
+  iconLink: {
+    textDecoration: "none",
+  },
   iconCircle: {
     width: "30px", 
     height: "30px",
@@ -128,6 +156,8 @@ const styles = {
     fontSize: "0.8rem",
     cursor: "pointer",
     border: "1px solid rgba(255,255,255,0.1)",
+    color: "#fff",
+    transition: "background 0.3s ease",
   },
   bottomBar: {
     borderTop: "1px solid rgba(255,255,255,0.1)",
