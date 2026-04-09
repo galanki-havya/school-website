@@ -16,7 +16,7 @@ function VisionMission() {
             <h3 style={styles.cardTitle}>Our Vision</h3>
             <p style={styles.text}>
               To be a center of excellence in education, inspired by the teachings of 
-              Swami Vivekanandha, nurturing future-ready global citizens who are 
+              Swamy Vivekananda, nurturing future-ready global citizens who are 
               intellectually competent, morally upright, and socially responsible. 
               We aim to manifest the perfection already existing in every child.
             </p>
@@ -56,7 +56,7 @@ function VisionMission() {
           <p style={styles.quote}>
             "Education is the manifestation of the perfection already in man."
           </p>
-          <span style={styles.author}>— Swami Vivekanandha</span>
+          <span style={styles.author}>— Swamy Vivekananda</span>
         </div>
       </div>
     </section>

@@ -56,7 +56,7 @@ const Contact = () => {
             ...styles.heading,
             fontSize: isMobile ? "1.8rem" : "2.5rem"
           }}>
-            Sri Swami Vivekanandha E M High School
+            Sri Swamy Vivekananda E M High School
           </h2>
           <div style={styles.underline}></div>
           <p style={styles.subtext}>
@@ -80,7 +80,7 @@ const Contact = () => {
               title="Phone Support"
               isPhone={true}
               lines={[
-                { label: "Correspondent", num: "9440914949" },
+                { label: "Chairman", num: "9440914949" },
                 { label: "Head Mistress", num: "9885692469" },
                 { label: "Office", num: "8985904949" }
               ]}

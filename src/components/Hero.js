@@ -23,7 +23,7 @@ function Hero() {
         }}>
           <span style={styles.preTitle}>Building a Foundation for Excellence</span>
           <h1 style={styles.title}>
-            Sri Swami <br /> Vivekananda School
+            Sri Swamy <br /> Vivekananda School
           </h1>
           
           <div style={{

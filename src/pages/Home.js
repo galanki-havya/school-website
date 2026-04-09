@@ -50,7 +50,7 @@ function Home() {
               <h2 style={styles.sectionTitle}>A Tradition of Excellence</h2>
               <div style={{...styles.goldLine, ...(isMobile ? { margin: '10px auto' } : {})}}></div>
               <p style={styles.bodyText}>
-                Founded on the principles of Swami Vivekanandha, our institution blends traditional 
+                Founded on the principles of Swamy Vivekananda, our institution blends traditional 
                 values with modern pedagogical approaches, serving our community for over 25 years 
                 through the State Board curriculum.
               </p>
@@ -96,7 +96,7 @@ function Home() {
                   to become global citizens while staying rooted in our culture."
                 </p>
                 <h4 style={styles.authorName}>Dr. P. Surendra Yadav</h4>
-                <span style={styles.authorTitle}>M.A., Ph.D. • Chairman</span>
+                <span style={styles.authorTitle}>B.A. • Chairman</span>
               </div>
             </div>
 

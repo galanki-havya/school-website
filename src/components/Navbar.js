@@ -24,7 +24,7 @@ function Navbar() {
         <div style={styles.logoContainer}>
           <img src={schoolLogo} alt="SSV School Logo" style={styles.logoImage} />
           <div style={styles.logoText}>
-            <span style={styles.schoolNameMain}>SRI SWAMY VIVEKANANDHA</span>
+            <span style={styles.schoolNameMain}>SRI SWAMY VIVEKANANDA</span>
             <span style={styles.schoolNameSub}>ENGLISH MEDIUM HIGH SCHOOL</span>
           </div>
         </div>

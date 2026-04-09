@@ -21,7 +21,7 @@ function Header() {
         <div style={styles.logoContainer}>
           <div style={styles.logoIcon}>SV</div>
           <div>
-            <h1 style={styles.schoolName}>SRI SWAMY VIVEKANANDHA</h1>
+            <h1 style={styles.schoolName}>SRI SWAMY VIVEKANANDA</h1>
             <p style={styles.schoolSubtitle}>WISDOM • CHARACTER • EXCELLENCE</p>
           </div>
         </div>

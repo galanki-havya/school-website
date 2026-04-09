@@ -3,19 +3,19 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
+  const mapsUrl = "https://maps.app.goo.gl/LSWNbvcrgAhJ6w3o6";
 
   return (
     <footer style={styles.footerContainer}>
       <div style={styles.contentGrid}>
         
         <div style={styles.column}>
-          <h3 style={styles.columnTitle}>Sri Swamy Vivekanandha E.M High School</h3>
+          <h3 style={styles.columnTitle}>Sri Swamy Vivekananda E.M High School</h3>
           <p style={styles.schoolDescription}>
             Nurturing young minds with a blend of modern education and 
             timeless values since 1998.
           </p>
           <div style={styles.socialIcons}>
-            {/* Functional Facebook Link */}
             <a 
               href="https://www.facebook.com/surendra.yadav.514223/" 
               target="_blank" 
@@ -41,13 +41,20 @@ function Footer() {
 
         <div style={styles.column}>
           <h3 style={styles.columnTitle}>Get In Touch</h3>
-          <p style={styles.contactItem}>
+          
+          {/* Clickable Address */}
+          <a 
+            href={mapsUrl} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            style={{...styles.link, ...styles.contactItem}}
+          >
             📍 Mudivedu Cross, Kurabalakota Mandal, Annamayya District, AP - 517350
-          </p>
+          </a>
           
           <div style={styles.contactGroup}>
             <p style={styles.contactItem}>
-              📞 <a href="tel:+919440914949" style={styles.link}>+91 94409 14949</a> (Correspondent)
+              📞 <a href="tel:+919440914949" style={styles.link}>+91 94409 14949</a> (Chairman)
             </p>
             <p style={styles.contactItem}>
               📞 <a href="tel:+919885692469" style={styles.link}>+91 98856 92469</a> (H.M.)
@@ -68,7 +75,7 @@ function Footer() {
 
       <div style={styles.bottomBar}>
         <p style={styles.copyright}>
-          © {currentYear} Sri Swamy Vivekanandha E.M High School. All rights reserved.
+          © {currentYear} Sri Swamy Vivekananda E.M High School. All rights reserved.
         </p>
       </div>
     </footer>
@@ -161,7 +168,7 @@ const styles = {
   },
   bottomBar: {
     borderTop: "1px solid rgba(255,255,255,0.1)",
-    paddingTop: "20px",
+    padding: "20px",
     textAlign: "center",
   },
   copyright: {

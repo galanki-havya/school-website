@@ -42,7 +42,7 @@ function About() {
               <div style={styles.imageBackdrop}></div>
               <img 
                 src={aboutImage} 
-                alt="Sri Swamy Vivekanandha School Campus" 
+                alt="Sri Swamy Vivekananda School Campus" 
                 style={styles.mainImage} 
               />
               <div style={styles.experienceBox}>
@@ -65,8 +65,8 @@ function About() {
                 margin: isMobile ? "15px auto" : "0 0 20px 0"
               }}></div>
               <p style={styles.paragraph}>
-                Sri Swamy Vivekanandha English Medium High School is a community dedicated 
-                to the holistic growth of every child. Inspired by the teachings of Swami Vivekanandha, 
+                Sri Swamy Vivekananda English Medium High School is a community dedicated 
+                to the holistic growth of every child. Inspired by the teachings of Swamy Vivekananda, 
                 we blend tradition with modern innovation.
               </p>
 

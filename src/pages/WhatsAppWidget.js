@@ -3,7 +3,7 @@ import React from "react";
 const WhatsAppWidget = () => {
   // Using the Office number from your school flyer
   const phoneNumber = "918985904949"; 
-  const message = "Namaste! I would like to enquire about admissions at Sri Swami Vivekanandha EM High School.";
+  const message = "Namaste! I would like to enquire about admissions at Sri Swamy Vivekananda EM High School.";
   
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
