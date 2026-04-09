@@ -51,7 +51,19 @@ function Navbar() {
           <li><Link onClick={() => setIsOpen(false)} style={styles.navLink} to="/">Home</Link></li>
           <li><Link onClick={() => setIsOpen(false)} style={styles.navLink} to="/about">About Us</Link></li>
           <li><Link onClick={() => setIsOpen(false)} style={styles.navLink} to="/gallery">Gallery</Link></li>
-          <li><Link onClick={() => setIsOpen(false)} style={styles.contactBtn} to="/contact">Contact Us</Link></li>
+          <li><Link onClick={() => setIsOpen(false)} style={styles.navLink} to="/contact">Contact Us</Link></li>
+          {/* New Highlighted Login Button */}
+          <li>
+            <a 
+              href="https://educampus360.com/login" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              onClick={() => setIsOpen(false)} 
+              style={styles.loginBtn}
+            >
+              Login
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -79,21 +91,22 @@ const styles = {
   schoolNameMain: { fontSize: "clamp(0.85rem, 2vw, 1rem)", fontWeight: "800", color: "#0B3C5D" },
   schoolNameSub: { fontSize: "0.55rem", fontWeight: "700", color: "#666", letterSpacing: "1px", textTransform: "uppercase" },
   
-  // Desktop Menu
   menu: { display: "flex", listStyle: "none", gap: "25px", alignItems: "center", margin: 0, padding: 0 },
   navLink: { textDecoration: "none", color: "#444", fontWeight: "600", fontSize: "0.9rem" },
-  contactBtn: {
+  
+  // Highlighted Login Button Style
+  loginBtn: {
     textDecoration: "none",
     backgroundColor: "#F4B41A",
     color: "#0B3C5D",
-    padding: "10px 20px",
+    padding: "10px 25px",
     borderRadius: "4px",
     fontWeight: "700",
     fontSize: "0.85rem",
     textTransform: "uppercase",
+    transition: "background-color 0.2s",
   },
 
-  // Mobile Menu Styles
   hamburger: {
     display: "flex",
     flexDirection: "column",
@@ -120,7 +133,7 @@ const styles = {
     boxShadow: "0 10px 10px rgba(0,0,0,0.05)",
   },
   navMobileOpen: {
-    height: "260px", 
+    height: "300px", // Increased slightly to accommodate the extra button
   },
   menuMobile: {
     flexDirection: "column",
