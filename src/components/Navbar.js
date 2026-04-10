@@ -52,16 +52,16 @@ function Navbar() {
           <li><Link onClick={() => setIsOpen(false)} style={styles.navLink} to="/about">About Us</Link></li>
           <li><Link onClick={() => setIsOpen(false)} style={styles.navLink} to="/gallery">Gallery</Link></li>
           <li><Link onClick={() => setIsOpen(false)} style={styles.navLink} to="/contact">Contact Us</Link></li>
-          {/* New Highlighted Login Button */}
+          {/* ERP Login now looks like a normal link */}
           <li>
             <a 
               href="https://educampus360.com/login" 
               target="_blank" 
               rel="noopener noreferrer"
               onClick={() => setIsOpen(false)} 
-              style={styles.loginBtn}
+              style={styles.navLink}
             >
-              Login
+              ERP Login
             </a>
           </li>
         </ul>
@@ -93,19 +93,6 @@ const styles = {
   
   menu: { display: "flex", listStyle: "none", gap: "25px", alignItems: "center", margin: 0, padding: 0 },
   navLink: { textDecoration: "none", color: "#444", fontWeight: "600", fontSize: "0.9rem" },
-  
-  // Highlighted Login Button Style
-  loginBtn: {
-    textDecoration: "none",
-    backgroundColor: "#F4B41A",
-    color: "#0B3C5D",
-    padding: "10px 25px",
-    borderRadius: "4px",
-    fontWeight: "700",
-    fontSize: "0.85rem",
-    textTransform: "uppercase",
-    transition: "background-color 0.2s",
-  },
 
   hamburger: {
     display: "flex",
@@ -133,7 +120,7 @@ const styles = {
     boxShadow: "0 10px 10px rgba(0,0,0,0.05)",
   },
   navMobileOpen: {
-    height: "300px", // Increased slightly to accommodate the extra button
+    height: "280px", 
   },
   menuMobile: {
     flexDirection: "column",
