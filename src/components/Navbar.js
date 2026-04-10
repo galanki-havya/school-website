@@ -52,7 +52,6 @@ function Navbar() {
           <li><Link onClick={() => setIsOpen(false)} style={styles.navLink} to="/about">About Us</Link></li>
           <li><Link onClick={() => setIsOpen(false)} style={styles.navLink} to="/gallery">Gallery</Link></li>
           <li><Link onClick={() => setIsOpen(false)} style={styles.navLink} to="/contact">Contact Us</Link></li>
-          {/* ERP Login now looks like a normal link */}
           <li>
             <a 
               href="https://educampus360.com/login" 
